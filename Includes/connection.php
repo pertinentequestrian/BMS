@@ -1,4 +1,9 @@
 <?php
+	// 000webhost database info
+	//host: localhost
+	//user: id19355043_root
+	//pass: h9DT3Iti59rW#th4
+	//db name: id19355043_book_monitoring
 	$con = mysqli_connect("localhost", "root", "") or die ("Cannot Find Host" . mysqli_connect_error());
 	if($con)
 	{
