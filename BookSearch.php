@@ -13,8 +13,8 @@
 			if(isset($_COOKIE['User']))
 			{
 				$view = "select Username, Password from Login where Username='". $_COOKIE['User'] ."' ";
-				$viewGO = mysql_query($view,$con) or die (mysql_error());
-				if (mysql_num_rows($viewGO)>0)
+				$viewGO = mysqli_query($con,$view) or die (mysqli_error());
+				if (mysqli_num_rows($viewGO)>0)
 				{
 					echo "<center><header class='head'>
 						<h2 style='font-family:Copperplate-Gothic; font-size:30px;'>Book Monitoring System</h2>
@@ -45,10 +45,10 @@
 								else
 								{
 									$view="select BID, BTitle, Author, Publisher, Year from books_information where Author like '%".$Author."%'";
-									$viewGO = mysql_query($view,$con) or die (mysql_error());
-									if(mysql_num_rows($viewGO)>0)
+									$viewGO = mysqli_query($con,$view) or die (mysqli_error());
+									if(mysqli_num_rows($viewGO)>0)
 									{
-										while($record=mysql_fetch_array($viewGO))
+										while($record=mysqli_fetch_array($viewGO))
 										{
 											echo"<tr><td>".$record['BID']."</td><td>".$record['BTitle']."</td><td>".$record['Author']."</td> <td>".$record['Publisher']."</td> <td>".$record['Year']."</td></tr>";
 										}
