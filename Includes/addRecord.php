@@ -20,20 +20,6 @@
 	$tblUser2 = "insert into User(UID, Occupation) values(2,'Librarian')";
 	$OR2 = mysql_query($tblUser2, $con) or die(mysql_error());
 	
-	$track1 = "insert into Track(TrID, TrackDesc) values(1, 'Academic')";
-	$Tr1 = mysql_query($track1, $con) or die(mysql_error());
-	$track2 = "insert into Track(TrID, TrackDesc) values(2, 'TVL')";
-	$Tr2 = mysql_query($track2, $con) or die(mysql_error());
-	
-	$strand1 = "insert into Strand(StrID, StrandDesc, TrID) values('ABM', 'Accountancy, Business and Management', 1)";
-	$Str1 = mysql_query($strand1, $con) or die(mysql_error());
-	$strand2 = "insert into Strand(StrID, StrandDesc, TrID) values('GAS', 'General Academic Strand', 1)";
-	$Str2 = mysql_query($strand2, $con) or die(mysql_error());
-	$strand3 = "insert into Strand(StrID, StrandDesc, TrID) values('HUMSS', 'Humanities and Social Sciences', 1)";
-	$Str3 = mysql_query($strand3, $con) or die(mysql_error());
-	$strand4 = "insert into Strand(StrID, StrandDesc, TrID) values('ICT', 'Computer Programming', 2)";
-	$Str4 = mysql_query($strand4, $con) or die(mysql_error());
-	
 	$grade1 = "insert into Level(LvlID, LevelDesc) values('E', '11')";
 	$GR1 = mysql_query($grade1, $con) or die(mysql_error());
 	$grade2 = "insert into Level(LvlID, LevelDesc) values('T', '12')";
