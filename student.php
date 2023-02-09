@@ -13,8 +13,8 @@
 			if(isset($_COOKIE['User']))
 			{
 				$view = "select Username, Password from Login where Username='". $_COOKIE['User'] ."' ";
-				$viewGO = mysql_query($view,$con) or die (mysql_error());
-				if (mysql_num_rows($viewGO)>0)
+				$viewGO = mysqli_query($con,$view) or die (mysqli_error());
+				if (mysqli_num_rows($viewGO)>0)
 				{
 					echo "<center><header class='head'>
 						<h2 style='font-family:Copperplate-Gothic; font-size:30px;'>Book Monitoring System</h2>
