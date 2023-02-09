@@ -14,14 +14,14 @@
 		$stbl = "create table IF NOT EXISTS Students(RID int(20) AUTO_INCREMENT, SFname varchar(20), SMname varchar(20), SLname varchar(20), SID varchar(20), LvlID varchar(8), SectID varchar(8), SyID varchar(8), TrID varchar(8), StrID varchar(8), PRIMARY KEY(RID))";
 		mysqli_query($con, $stbl) or die (mysqli_error($con));
 		
-		$ttbl = "create table IF NOT EXISTS Track(TrID int(8) AUTO_INCREMENT, TrackDesc varchar(20), PRIMARY KEY(TrID))";
-		mysqli_query($con, $ttbl) or die (mysqli_error($con));
+		//$ttbl = "create table IF NOT EXISTS Track(TrID int(8) AUTO_INCREMENT, TrackDesc varchar(20), PRIMARY KEY(TrID))";
+		//mysqli_query($con, $ttbl) or die (mysqli_error($con));
 		
-		$strtbl = "create table IF NOT EXISTS Strand(StrID varchar(8), StrandDesc varchar(20), TrID int(8), PRIMARY KEY(StrID))";
-		mysqli_query($con, $strtbl) or die (mysqli_error($con));
+		//$strtbl = "create table IF NOT EXISTS Strand(StrID varchar(8), StrandDesc varchar(20), TrID int(8), PRIMARY KEY(StrID))";
+		//mysqli_query($con, $strtbl) or die (mysqli_error($con));
 		
-		$semtbl = "create table IF NOT EXISTS Semester(SemID varchar(8), SemesterDesc varchar(20), PRIMARY KEY(SemID))";
-		mysqli_query($con, $semtbl) or die (mysqli_error($con));
+		//$semtbl = "create table IF NOT EXISTS Semester(SemID varchar(8), SemesterDesc varchar(20), PRIMARY KEY(SemID))";
+		//mysqli_query($con, $semtbl) or die (mysqli_error($con));
 		
 		$lvltbl = "create table IF NOT EXISTS Level(LvlID varchar(8), LevelDesc varchar(20), PRIMARY KEY(LvlID))";
 		mysqli_query($con, $lvltbl) or die (mysqli_error($con));
@@ -35,8 +35,8 @@
 		$lbtbl = "create table IF NOT EXISTS Librarian(RID int(20) AUTO_INCREMENT, LFname varchar(20), LMname varchar(20), LLname varchar(20),LID varchar(20), PRIMARY KEY(RID))";
 		mysqli_query($con, $lbtbl) or die (mysqli_error($con));
 		
-		$stattbl = "create table IF NOT EXISTS Status(StID int(8) AUTO_INCREMENT, Status varchar(20), PRIMARY KEY(StID))";
-		mysqli_query($con, $stattbl) or die (mysqli_error($con));
+		//$stattbl = "create table IF NOT EXISTS Status(StID int(8) AUTO_INCREMENT, Status varchar(20), PRIMARY KEY(StID))";
+		//mysqli_query($con, $stattbl) or die (mysqli_error($con));
 		
 		$btbl = "create table IF NOT EXISTS Books_Information(BID varchar(15), BTitle varchar(50), Author varchar(50), Publisher varchar(50), Year varchar(20), BsID int(8), PRIMARY KEY(BID))";
 		mysqli_query($con, $btbl) or die (mysqli_error($con));
