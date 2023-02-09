@@ -1,0 +1,42 @@
+header{
+	border-style:solid;
+	border-width:3px;
+	background-color:black;
+}
+footer{
+	border-style:solid;
+	border-width:3px;
+	background-color:cyan;
+	font-family:Cambria;
+}
+body{
+	background-color:#9a9a9a;
+}
+.img1{
+	float: right;
+}
+.img2{
+	float:left;
+}
+.welcome{
+	background-image: url("bookcollect.jpg");
+	font-size:20px;
+	font-family:Georgia;
+	color:#FFFFFF;
+}
+.boxes{
+	border-style:solid;
+	border-width:3px;
+	font-size:18px;
+	overflow:auto;
+}
+.head{
+	color:white;
+	font-family:Calibri;
+}
+a:active{
+	color:#0000FF;
+}
+a:hover{
+	color:#FF0000;
+}

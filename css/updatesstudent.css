@@ -1,0 +1,27 @@
+header{
+	border-style:solid;
+	border-width:3px;
+	background-color:black;
+	color:white;
+}
+footer{
+	border-style:solid;
+	border-width:3px;
+	background-color:cyan;
+	font-family:Cambria;
+}
+body{
+	background-color:#9a9a9a;
+}
+#inside{
+	border:2px solid;
+	border-radius:12px;
+	background-color:#800080;
+}
+.tabdes{
+	font-family:Helvetica;
+	color:#FFD700;
+}
+#tbd{
+	color:black;
+}

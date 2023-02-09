@@ -1,0 +1,15 @@
+#table{
+	background-color:#73AD21;
+	color:#FFFF00;
+	text-align:center;
+	position:relative;
+	margin: auto;
+	width: 20%;
+	border: 3px solid #73AD21;
+	border-radius:12px;
+	padding: 10px;
+	top:200px;
+}
+body{
+	background-color:#ff7f7f;
+}
