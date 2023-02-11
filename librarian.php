@@ -10,15 +10,15 @@
 	</head>
 	<body>
 		<?php
-			if(isset($_COOKIE['user']))
+			if(isset($_COOKIE['User']))
 			{
-				$view = "select Username, Password from login where Username='". $_COOKIE['user'] ."' ";
+				$view = "select Username, Password from Login where Username='". $_COOKIE['User'] ."' ";
 				$viewGO = mysqli_query($con,$view) or die (mysqli_error());
 				if (mysqli_num_rows($viewGO)>0)
 				{
 					echo "<center><header class='head'>
 						<h2 style='font-family:Copperplate-Gothic; font-size:30px;'>Book Monitoring System</h2>
-						<p>Welcome ".$_COOKIE['user']."
+						<p>Welcome ".$_COOKIE['User']."
 						<p style='font-family:Calibri;'>Home | 
 						<a href=''>Books</a> | 
 						<a href=''>Transaction History</a> | 
