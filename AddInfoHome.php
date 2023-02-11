@@ -132,7 +132,7 @@
                             <div class='row'>
                                 <div class='col-lg-6'>
                                 <div>
-                                    <form  method= 'POST' action='AddBookInfo.php'>
+                                    <form  method= 'POST' action='AddInfo.php'>
                                         <fieldset>
                                             <!-- Book Title Form Name -->
                                             <center><legend> <b> Book Title </b></legend></center>
@@ -148,7 +148,7 @@
                                             <!-- Book Author Text input-->
                                             <div >
                                                 <center>
-                                                    <input name='Book Author' type='text' placeholder='Book Author'  required='' id='place'>
+                                                    <input name='BookAuthor' type='text' placeholder='Book Author'  required='' id='place'>
                                                 </center>
                                             </div>
                                             
