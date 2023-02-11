@@ -10,7 +10,7 @@
 		}
 		
 		body {
-			background: url("illustback_4.jpg") no-repeat;
+			background: url("pics/illustback_4.jpg") no-repeat;
 			background-size: cover;
 			color: #fff;
 		}
