@@ -4,11 +4,11 @@
 	//user: id19355043_root
 	//pass: h9DT3Iti59rW#th4
 	//db name: id19355043_book_monitoring
-	$con = mysqli_connect("localhost", "root", "") or die ("Cannot Find Host" . mysqli_connect_error());
+	$con = mysqli_connect("localhost", "root", "","Book_Monitoring_2") or die ("Cannot Find Host" . mysqli_connect_error());
 	if($con)
 	{
-		$db = "create database IF NOT EXISTS Book_Monitoring_2";
-		mysqli_query($con,$db) or die (mysqli_error($con));
+		//$db = "create database IF NOT EXISTS Book_Monitoring_2";
+		//mysqli_query($con,$db) or die (mysqli_error($con));
 		mysqli_select_db($con, "Book_Monitoring_2");
 		$tbl1 = "create table IF NOT EXISTS Login(LgID varchar(20),Username varchar(20),Password varchar(20),UID varchar(20),StID int(8), PRIMARY KEY(LgID))"; //UID int(8) = UID varchar(20)
 		mysqli_query($con, $tbl1) or die (mysqli_error($con));

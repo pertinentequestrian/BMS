@@ -10,9 +10,9 @@
 	</head>
 	<body>
 		<?php
-			if(isset($_COOKIE['User']))
+			if(isset($_COOKIE['user']))
 			{
-				$view = "select Username, Password from Login where Username='". $_COOKIE['User'] ."' ";
+				$view = "select Username, Password from login where Username='". $_COOKIE['user'] ."' ";
 				$viewGO = mysqli_query($con,$view) or die (mysqli_error());
 				if (mysqli_num_rows($viewGO)>0)
 				{
