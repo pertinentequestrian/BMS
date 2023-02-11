@@ -9,7 +9,7 @@
 			font-family: sans-serif;
 		}
 		body {
-			background: url("illustback_2.jpg") no-repeat;
+			background: url("pics/illustback_2.jpg") no-repeat;
 			background-size: cover;
 		}
 		.login-form {
