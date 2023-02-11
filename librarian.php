@@ -50,9 +50,9 @@
 			if (isset($_COOKIE['User']))
 			{
 				
-				$view = "select Username, Password from logintable where Username='". $_COOKIE['User'] ."' ";
-				$viewGO = mysql_query($view,$con) or die (mysql_error());
-				if (mysql_num_rows($viewGO)>0)
+				$view = "select Username, Password from login where Username='". $_COOKIE['User'] ."' ";
+				$viewGO = mysqli_query($con,$view) or die (mysqli_error());
+				if (mysqli_num_rows($viewGO)>0)
 				{
 					echo "<br/><h4 align='right' ><?php".$date.";?></h4>
 							<label id='CSScookie' > <u> Welcome Librarian: " .$_COOKIE['User']. " </u> </label>
@@ -61,7 +61,7 @@
 						<div class='navbar'>
 							<a href='Librarian.php'>Home</a>
 		
-								<a href='AddInfo.php'> Add Book Information </a>
+								<a href='AddInfoHome.php'> Add Book Information </a>
 								<a href='View.php'> Request </a>
 								<a href='Update.php'> Update </a>
 								<a href='Search.php'> View </a>

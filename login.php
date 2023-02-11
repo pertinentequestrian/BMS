@@ -9,7 +9,7 @@
 			font-family: sans-serif;
 		}
 		body {
-			background: url("illustback_2.jpg") no-repeat;
+			background: url("pics/illustback_2.jpg") no-repeat;
 			background-size: cover;
 		}
 		.login-form {
@@ -96,13 +96,13 @@
 					<tr><td colspan="2"><center>
 						<br>
 						<div class="radb">
-							<input id="ST" type="radio" name="radbutton" value="Student" class="radb_stu" style="text-align:center;margin-right:10px;">
+							<input id="ST" type="radio" name="Occupation" value="Student" class="radb_stu" style="text-align:center;margin-right:10px;">
 							<label id="Student" for="ST" style="margin-right:30px; margin-top: 1px;">Student</label>
-							<input id="LB" type="radio" name="radbutton" value="Library" class="radb_lib" style="text-align:center;margin-right:10px;">
-							<label id="Library" for="LB" style="margin-top: 1px;">Library</label>
+							<input id="LB" type="radio" name="Occupation" value="Librarian" class="radb_lib" style="text-align:center;margin-right:10px;">
+							<label id="Library" for="LB" style="margin-top: 1px;">Librarian</label>
 						</div>
-						<button type="submit">Login</button>
-						<button type="reset">Cancel</button>
+						<input type="submit" name="submit" value="Login">Login</button>
+						<input type="reset" name="reset">Cancel</button>
 					<tr><td colspan="2"><br><center>Not registered? <a href="register.php" style="color:green">Sign up now!</a></center></td></tr>
 					</center></td></tr>
 				</form>
